@@ -1,0 +1,32 @@
+Node.JS
+We interact with our website, in JS, through the DOM (Document Object Model) - this is effectively a representation of everything in the site
+This object-oriented representation of
+our website - where everything is organised into its own little ‘objects’, make it easy for us to manipulate the site.
+Think of DOM as the whole collective hierarchy of our website - we can use its parts (e.g. ‘document’ object) to access its sub-parts like the elements we added!
+
+What is it?
+Node is runtime environment / software that allows us to run JavaScript code outside of a browser - ordinarily we can only execute JS code via a browser (hence why we need inspector tool).
+This allows us to write specific JS code to handle operations in ways that are normally more difficult - for example, creating “HTTP pathways” (effectively mechanisms of controlling how websites respond to internet requests)
+A powerful part of Node is that it’s written in JavaScript - this means that a website could have JS code that handles its behaviour and its server operations. We could still use
+Python, Java or other languages for handling server operations (e.g. the HTTP pathways), but it’s sometimes so much easier logistically (and cheaper) to have one language do it all (instead of needing to handle and write x languages!)
+
+Express is a Node framework - it’s effectively a ‘implementation’ of Node (e.g. like a specialised version of Node) that focuses strongly on handling HTTP pathways
+We can still handle HTTP requests ordinarily through Node, but it is vastly more easier via Express
+
+Putting it together
+Ensure all files are together in 1 folder
+In this folder make a new file called ‘app.js’
+
+Publishing it globally
+
+This MUST be done whilst your website is on localhost
+We’ll use a library to help us achieve this (https://theboroer.github.io/localtunnel-www/)
+On another terminal run the command npm install -g localtunnel
+Then run the command lt --port 3000
+It should display a url . 
+Go to the address it displays
+Find password using this url - https://loca.lt/mytunnelpassword
+Then enter password to view
+Your website is now available globally! (As long as you keep the server running!
+To shut it down, close the windows or do CTRL + C / CMD + C).
+If you are having issues with tunnel try running lt --port 3000 on powershell (outside VsCode).
