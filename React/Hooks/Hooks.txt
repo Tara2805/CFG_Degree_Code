@@ -1,0 +1,7 @@
+This is a mechanism that allows us to access the same state & lifecycle magic via functional components instead.
+● To achieve this, we effectively hook onto State or lifecycle methods to make use of it ourselves without needing class components
+● We can create our own custom hooks, but for the time being, we’ll be using React’s in-built hooks (useState for State, useEffect for lifecycle effects, etc)
+Using Hooks, we can determine what we want to show the users by declaring how our user interface should look based on the state.
+
+React offers a number of built-in Hooks. A few of these include useState(), useEffect(), useContext(), useReducer(), and useRef(). See the full list in the React docs.
+

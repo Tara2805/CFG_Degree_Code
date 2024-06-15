@@ -1,0 +1,21 @@
+Introducing Jest and other alternatives
+● Usually we’d like to test the components we create to ensure their reliability. We can either render component trees in a simple test environment and
+assert its output, or run the whole project fully in a realistic environment (testing fully everything ala end-to-end testing).
+● For the time being, we focus on the first case. When considering tools, we usually need to consider:
+1. Speed vs Realism of environment: Some can help us test quickly, but the environment isn’t as good (doesn’t
+match a browser fully) - but improving the latter metric usually means sacrificing speed.
+1. How much to mock: How much should be tested? The whole component? The buttons inside it? Etc
+
+       npm install --save -dev Jest
+       npm install react@latest react-dom@latest
+       npm install -d @types/react@latest @types/react-dom@latest
+
+Jest
+Through Jest, we can create ‘snapshots’ of expected
+component behaviour, and compare future snapshots to the
+original one in order to see if anything has changed or not
+(allowing us to catch erroneous or abnormal changes that we
+wouldn’t have expected otherwise).
+● We can also assert and test components through
+complementary tools like React Testing Library too! Installable
+via npm, this also allows us to deploy tests on the React DOM.

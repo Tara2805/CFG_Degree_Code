@@ -1,0 +1,19 @@
+Mounting
+Mounting means putting elements into the DOM.
+React has four built-in methods that gets called, in this order, when mounting a component:
+constructor()
+getDerivedStateFromProps()
+render()
+componentDidMount()
+The render() method is required and will always be called, the others are optional and will be called if you define them.
+
+componentDidMount
+The componentDidMount() method is called after the component is rendered.
+This is where you run statements that requires that the component is already placed in the DOM.
+componentDidUpdate
+The componentDidUpdate method is called after the component is updated in the DOM.
+The example below might seem complicated, but all it does is this:
+When the component is mounting it is rendered with the favorite color "red".
+When the component has been mounted, a timer changes the state, and the color becomes "yellow".
+This action triggers the update phase, and since this component has a componentDidUpdate method, this method is executed and writes a message in the empty DIV element:
+componentDidUpdate(prevProps, prevStates, snapshot)

@@ -1,0 +1,77 @@
+Class Components
+A class component is simply just another approach to create a component - instead of writing the component code as a function, we write it as a class instead.
+● We don’t need to do anything with the rest of our components, but this new button component that you should create (can look exactly like the previous button - feel free to reuse the CSS file) should be a class button instead.
+● Making use of what you’ve learnt from the previous slide, alongside Google and online documentation, create a new component that’s written in pure class code instead!
+● The text of this new button can be anything as well - the important part is that its code is class based instead of functional based!
+
+import React, { Component } from 'react';
+
+class MyClassComponent extends Component {
+  // Constructor method - binds the event handler method to the component instance.
+  constructor(props) {
+    super(props); // Calls the parent class's constructor
+    this.state = { // Initializing the state
+      message: 'Hello, world!',
+      count: 1
+    };
+
+    // Binding the method to 'this'
+    this.whenButtonPressed = this.whenButtonPressed.bind(this);
+    this.whenButtonNumberPressed = this.whenButtonNumberPressed.bind(this)
+  }
+
+  // Method to handle button press
+  whenButtonPressed() {
+    this.setState({ message: 'Button was pressed!' });
+  }
+
+  whenButtonNumberPressed() {
+    console.log("Button number pressed ")
+    this.setState((state) => ({
+      count: state.count + 1
+    })) 
+  }
+  render() {
+    return (
+      <div>
+        <p>{this.state.message}</p>
+        <button onClick={this.whenButtonPressed}>Press Me</button>
+        <button onClick={this.whenButtonNumberPressed}>{this.state.count}</button>
+      </div>
+    );
+  }
+}
+
+export default MyClassComponent;
+
+
+
+import { Component } from "react";
+
+
+class GreetingsClass extends Component {
+    constructor(props){
+        super(props) // parent class constructor
+    }
+
+    render () {
+          return (
+        <div>
+            <h1> Hello GreetingsClass, {this.props.name} !</h1>
+        </div>
+    )  
+    }
+}
+
+ export default GreetingsClass;
+
+const Greetings = (props) => {
+    return (
+        <div>
+            <h1> Hello, {props.name} !</h1>
+            <h1> Hello, {props.age} !</h1>
+        </div>
+    )
+}
+
+export default Greetings;

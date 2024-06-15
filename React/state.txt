@@ -1,0 +1,7 @@
+State
+Components have a paired element to them called the state - this is a object that contains information and attributes about the component
+● This state can change over time (e.g. through modification, perhaps we increment a value that’s stored inside it) - when this occurs, the component re-renders
+● Consider it like the components information bank - I can store the components text, attributes and anything inside its state. The bonus is that when these critical values update, so does the component
+● Props and state are very similar - they’re objects that store information (which can influence the output of a render)! The difference is that props get passed to the component (similar to function parameters) whereas state is managed within the component (similar to variables declared within a function).
+
+state cannot be added to a functional component

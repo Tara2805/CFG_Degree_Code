@@ -1,0 +1,133 @@
+GRAPH STRUCTURE
+
+● A GRAPH consists of
+a finite set of
+vertices or nodes and
+a set of edges
+connecting these
+vertices.
+● Two vertices are said
+to be adjacent if they
+are connected to
+each other by the
+same edge..
+
+GLOSSARY
+
+● These are key
+definitions that
+we need to
+know in relation
+to GRAPHs
+
+● Order: The number of vertices in the graph
+● Size: The number of edges in the graph
+● Vertex degree: The number of edges that are incident to a vertex
+● Isolated vertex: A vertex that is not connected to any other vertices in the graph
+● Self-loop: An edge from a vertex to itself
+● Directed graph: A graph where all the edges have a direction indicating what is the
+start vertex and what is the end vertex
+● Undirected graph: A graph with edges that have no direction
+● Weighted graph: Edges of the graph has weights
+● Unweighted graph: Edges of the graph has no weights
+● Graph cycle: a cycle occurs when three or more vertices in the graph are
+connected so as to form a closed loop
+● Acyclic graph: a graph that has no cycles
+● Cyclic graph: a graph that has at least one cycle
+● Connected graph: graph is connected if for every pair of vertices in the graph
+there is a path of one or more edges connecting the given vertices.
+
+BREADTH-FIRST SEARCH
+
+EXAMPLES
+
+● Used to determine
+the shortest paths
+and minimum
+spanning trees.
+● Used to search on
+social networks.
+
+BFS
+
+Starts at a particular
+vertex and explore all of its
+neighbours at the present
+depth before moving on to
+the vertices in the next
+level.
+
+DEPTH-FIRST SEARCH
+
+EXAMPLES
+
+● Used to find a path
+between two
+vertices.
+● Used to detect
+cycles in a graph.
+● Used in topological
+sorting.
+● Used to solve
+puzzles having only
+one solution (e.g.,
+mazes)
+
+DFS
+
+Starts from a particular
+vertex and explore as far
+as possible along each
+branch before retracing
+back (backtracking).
+
+SHORTEST PATH
+
+EXAMPLES
+
+● Used to find
+directions to travel
+from one location to
+another in mapping
+software like Google
+maps or Apple
+maps.
+● Used in networking
+to solve the
+min-delay path
+problem.
+
+SHORTEST PATH
+
+The shortest path from
+one vertex to another
+vertex is a path in the
+graph such that the sum
+of the weights of the
+edges that should be
+travelled is minimum.
+(Dijkstra’s shortest path
+algorithm, Bellman–Ford
+algorithm)
+
+CYCLE DETECTION
+
+EXAMPLES
+
+● Used in distributed
+message-based
+algorithms.
+● Used to detect
+deadlocks in
+concurrent systems.
+
+CYCLE
+
+Path in a graph where the
+first and last vertices are
+the same. If we start from
+one vertex, travel along a
+path and end up at the
+starting vertex, then this
+path is a cycle.
+
