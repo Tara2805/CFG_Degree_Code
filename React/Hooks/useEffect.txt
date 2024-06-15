@@ -1,0 +1,30 @@
+useEffect
+● Imagine if componentDidMount and componentDidUpdate were combined together? The result would be useEffect
+● This is a hook that runs based on whether its assigned dependency has changed since last time - it’ll run once after first render, then keep an eye out for further changes!
+UseState and useEffect
+import React, { useState, useEffect } from 'react';
+
+function ExampleComponent() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `You clicked ${count} times`;
+
+    return () => {
+      // Cleanup if necessary
+    };
+  }, [count]); // Only re-run the effect if count changes
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+     
+
+javascript
+Copy code
+     <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}

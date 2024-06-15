@@ -1,0 +1,8 @@
+TypeScript
+● In programming languages, parameters and values are often exchanged with no prior
+definition of what types these values are (e.g. I expect a string parameter, but the language doesn’t know it’s explicitly a string!).
+● In Statically Typed languages, we explicitly define the type of everything so that it’s
+known at compile time (e.g. this function expects two strings and 1 integer, and it’ll return 1 boolean).
+● Through this, we can catch bugs more easily! Particularly when data is mutated wrongly and becomes the wrong type TypeScript is a implementation of this type-checking ability; it builds upon JavaScript (small further specialisation of the language) and gives us a JavaScript with syntax for types.
+● We won’t be able to work with it at the moment as setting it up would take too much time from other content, but it’s still important regardless that you’re aware of TS - and even ideally, make use of it in your projects!
+● By creating and defining everything with a type in our project (e.g. within files ending in .tsx - a cross mix between TS and JSX), we can create higher quality code; the lack of vagueness helps compilers eliminate bugs more easily / help us catch misunderstandings with ease!
