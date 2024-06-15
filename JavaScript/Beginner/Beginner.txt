@@ -1,0 +1,118 @@
+Constants
+Giving reusable data a name are a kind of variable
+way to give a name to data that we want to label and reuse
+Const is the keyword used to declare a constant. You can only assign a value once.
+The logged output is then the value of the variable.
+
+Concatenation
+joining strings together
+Concatenation uses the + sign to join string values together
+
+     const concatenation = message + " " + welcome
+     console.log(concatenation)
+
+Interpolation
+inserting values into a string
+Interpolation can be recognised by the backticks ` and the $ sign followed by variable name in curly brackets {}
+
+     const interpolation = `${message} ${welcome}`
+     console.log(interpolation)
+
+Casting between data types
+ 
+Sometimes we need to tell JavaScript that we want a value to be treated as a particular data type.
+Casting allows you to tell JavaScript to treat a Casting value as a particular type, e.g. Number(a)
+
+Prompts
+Get user input
+
+     const response = prompt(" Is the movie scary? ");
+     if (response === "true") {console.log("I will watch a comedy instead.")}
+     else {console.log("I can watch it!")}
+
+Variables with let
+let allows us to creates variables that can be reassigned (unlike const)
+reassign a new value to a variable
+
+Comparison operators
+A comparison, compares two values or variables. JavaScript has comparison operators for equality, less than, greater than etc.
+===, >=, <=, ==, !==,
+
+== performs type coercion before comparison.
+=== does not perform type coercion; it strictly compares both value and type.
+=== is generally considered safer and more predictable because it avoids unexpected type conversions, which can lead to subtle bugs in your code. However, there may be cases where == is appropriate, such as when you explicitly want type coercion to occur.
+
+Boolean - 1 = -1 true, 0 = 0 false
+
+     console.log(5 * 2 === 10);
+     console.log(5 == "5");
+
+Functions
+A function allows us to organise a section of code and give it a name related to what it does. 
+Uses function keyword followed by name of the function and empty brackets (). 
+Everything inside {} is what the function does
+
+function banner(words)
+{
+  console.log("----------------")
+  console.log(words)
+  console.log("----------------")
+}
+banner("Well")
+banner("not well")
+
+Logical Operators
+String comparison with the === operator is case sensitive.
+logical operators allow us to combine conditions using AND (&&), OR (||) and NOT (!).
+ 
+&& (And) - returns true if BOTH values are ‘true’
+otherwise returns false.
+ 
+● || (Or) - returns true if ONE or BOTH of the values is
+‘true’, otherwise returns false.
+ 
+● ! (Not) - this flips the value, if it was originally true
+then it is now false. Placed in front of the value.
+
+Variable Scope
+When we declare a variable (with const or let) inside a function... we cannot use that variable outside the function. We can declare a variable in an outer scope. Then read or assign (if declared with let) in an inner scope. The value of the variable is updated in the outer scope.
+Block scope: Variables declared inside { ... } can only be used within that block.
+Function scope: Variables declared inside a function can only be used within that function, they are created when the function is called and deleted when it returns.
+
+ARRAYS
+An array allows you to store multiple elements.
+An array can store multiple elements.
+● Syntax: [ element1, element2, ... ]
+● Array elements are accessed using an index.
+● The length property returns the number of elements
+indexes start from 0.
+
+push and pop
+push adds an element at the end of an array, pop removes the last element of an array and returns that element.
+
+Splice
+list comprehension() allows you to extract a portion of the array
+
+Slice
+splice allows you to modify an array by adding and/or removing elements starting from an index
+
+unshift and shift
+Add element to beginning of array with unshift
+Remove first element of the array with shift
+
+Objects
+The Object data type allows us to store multiple data values together.
+Sometimes it’s useful to group multiple data values together with labels (keys)
+For example, a book has a title, an author, and a publication year
+
+Object Methods
+A function inside an Object is called an Object Method.
+
+LOOPS
+
+FOR
+A for loop repeats a block of code for a number of iterations. We create a for loop by using the for statement. Telling the loop where to start and where to end, and how the initial value changes
+
+WHILE
+A while loop repeats a block of code while a condition is true.
+
