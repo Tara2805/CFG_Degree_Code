@@ -1,0 +1,19 @@
+React Packages
+Beautifying via React UI Libraries and utilities
+React Bootstrap is simply the same, but for React as well (cuts out so much work, having access to beautifully designed components to build off immediately!). Material UI (MUI) is the same.The third one is React Motion - we’ll be looking at how animations can be accomplished in order to make our websites look more seamless.
+React Material Gurrrl UI (MUI)
+Exactly like React Bootstrap, MUI provides components that we can quickly utilise and built into our React project to get it up and running.
+● Once installed with npm (or yarn - both package managers alike), you can just start using 
+the Material UI components. These are based off Google’s Material design; they’re just the React implementation of it.
+● There’s a large variety of components available (+ you can combine with React bootstrap, just install both!).
+React Motion
+● Although not as popular as the other two, React Motion is a library that can still be immensely useful for your project or general React development!
+● In effect, you surround components with a ‘Motion’ wrapper that allows you to animate how the component moves (e.g. through only specifying a few parameters like stiffness and damping - rest is taken care of by physics / the library!)
+● Installed similarly via npm
+Lodash
+● Lodash is a library that’s dedicated solely to providing utility functions - these are simply pieces of code that make it incredibly easy to work with arrays, numbers or other data structures. We can still do it ourselves, but it’s removes so much headache to just use lodash instead.
+● For example, there’s a filter method to use on collections (e.g. arrays) or a reject method (opposite of filter - remove any that don’t meet the predicate criteria); utilities like this save so much time!
+● Due to its ease of installation (just via npm) and use (import it in), lodash is a fantastic tool for you to use! If you modify any array or just work with data, you’ll likely eventually need one of lodash’s utility functions; it’ll save so much time to just one of lodash’s instead.
+Moment.js
+Ever had to work with time or any time-related data? Moment.js is a perfect tool to use for it! For example, it can format dates for you easily: It can subtract or add time making it easy to say calculate the date 10 years from now (e.g. show both current time and future time!).
+Again, installable via npm! Moment.js simply is the perfect tool for anything time-based.

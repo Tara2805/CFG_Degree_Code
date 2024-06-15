@@ -1,0 +1,11 @@
+Angular
+
+● Angular is incredibly similar to React, but with a few critical differences; React is a JavaScript library whereas Angular is a framework (usually via TypeScript, a more specialised JavaScript form).
+● The difference is that Angular does everything - it handles routing, it does every nuanced operation, making it a framework (due to how holistic it is). React can do the same, but it needs the assistance of 3rd party libraries (e.g. react routing for routing!),
+Components in Angular
+● Components are incredibly similar between Angular and React! On the right we have:
+● A: Import statements similar to React, where we grab necessary files from core angular
+(just like we would grab hooks or ‘react’ itself from ‘React’)
+● B: Where the HTML code goes for rendering
+● C: Styling for the component (e.g. font color, size, etc)
+● D: Class code for the component! Detailing how it should act, its behaviour, etc - exactly like our class components in React

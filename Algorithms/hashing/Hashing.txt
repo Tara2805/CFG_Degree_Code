@@ -1,0 +1,75 @@
+HASHING REFERENCE
+
+● A hash table (object in JavaScript or a dictionary in Python)
+organizes data so you can quickly look up values for a given
+key.
+● Think of a hashmap as a "hack" on top of an array to let us use
+flexible keys instead of being stuck with sequential integer
+"indices."
+● Hashing function - is a function to convert a key into an
+array index (an integer).
+● Hash collision - a situation where two keys hash to the same
+index in the array
+● Dealing with collision - instead of storing the actual values in
+the array, make each array slot to hold a pointer to a linked list
+(box) holding the values for all the keys that hash to that
+index.
+
+Regarding Hash Collisions
+
+# HASH COLLISION EXAMPLE
+Again, a quick overview of what it is and strategies to deal with it
+● No hashing mechanism is perfect - even with
+the use of fancy mathematics and prime
+numbers, there’s always the potential of a
+hash collision (instance where two data
+entities have the same hash value)
+● Collisions can just occasionally happen - pure
+chance is higher than you think. Consider for
+example The Birthday Paradox - you only
+need 23 people in a room for 2 of them to have
+the same birthday. 70 people in a room, and
+it’s 99% chance two have the same birthday.
+● As a result, we use some common hash
+collision strategies to resolve this; we’ll take a
+quick look at two common ones!
+
+Collision Strategy 1: Separate Chaining
+
+# EXAMPLE
+
+Simple & elegant
+The first collision strategy is ‘Separate Chaining’ - in
+essence, we just store more at the collision site.
+At collision sites, we effectively just add in a Linked
+List at that location - and add the next value in the
+adjacent linked list node
+If someone wants to search for a value given a hash,
+and that hash has had a lot of collisions, all they’d
+have to do is a linear search of the linked list nodes
+connected to that site!
+This strategy is really easy to implement, but it uses
+more memory (for the linked lists). Plus, if the linked
+chain becomes too long, then it’s O(N) look-up
+anyway (since I have to search N linked list nodes! It
+renders the benefit of Hashing’s O(1) look-up null).
+
+Collision Strategy 2: Linear Probing
+Also known as Open Addressing
+The idea of Linear Probing is: I have a hash table,
+and there’s bound to be some empty corners and
+spaces in it. If I get a hash collision, why not just
+place the element in the next adjacent free slot?
+When I need to do a look-up, and it’s not at the place
+I expected it to be (as it's in the other free slots), I
+just have to do a linear search (going adjacent) until I
+find it! And if I return to my starting position, then I
+know the element doesn’t exist.
+This saves an amazing amount of memory (no extra
+use, just re-use what you have) though it is difficult
+to implement + you could cause the table to actually
+get full - what happens when this occurs? You could
+get a literal self-catalysing collisions situation occuring
+
+
+

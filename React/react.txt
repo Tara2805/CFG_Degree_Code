@@ -78,3 +78,5 @@ There are three categories of lifecycle methods: mounting, updating, and unmount
 Routing
 ● First we’ll want to run the command npm install react-router-dom (or the yarn equivalent); this is to install the library first!
 ● Second: in your index.js, import these. Consider throughout - what does each one do, what is it responsible for, why? Although this code is guided, make sure to try to understand / treat this as a pair programming session!
+
+https://www.interviewcake.com/data-structures-reference

@@ -1,0 +1,176 @@
+A FEW OVERVIEWS
+
+So each LL node has:
+Data
+Memory Reference
+to the next node (last one points to Null)
+
+A data structure like arrays (in terms of, say, string information)
+except elements are not stored in contiguous memory locations. LL
+represents/is comprised of a sequence of nodes - each node points
+to (node pointer) the next node. Each node is essentially:
+The data
+2. Reference memory pointer to the next node (the last node points
+to null since it's the final node)
+
+A FEW OVERVIEWS
+
+A few differences compared
+to an array:
+We can access a index
+immediately in a list (e.g. I
+want the index 5 – the
+middle index of 10
+elements. I can access this
+immediately, so it’s O(1)).
+For a LL – we have to start
+from the head node and
+traverse 5 spaces down, so
+O(N / 2) since it’s O ( 10 / 2
+) -> O(N)
+
+Things to note/differences compared to an array:
+● You cannot access a particular element immediately/in constant time
+access. In arrays, we can access X element by using its respective index
+which gives us an 0(1) access. For LL, we have to traverse N elements to
+access X, giving us O (N) (start from the head and traverse because we
+don't have indexes hence we have linear time access instead).
+● Easy insertion/deletion for a LL:
+
+LINKED LIST ADVANTAGES
+
+● Structures like List,
+Tuple have fixed
+size. Inserting a new
+element in an array
+of elements is
+expensive because
+the room has to be
+created for the new
+elements and to
+create room existing
+elements have to be
+shifted.
+
+1) Dynamic size
+
+2) Ease of insertion/deletion
+
+LINKED LIST DISADVANTAGES
+
+1) Random access is not allowed. We have to
+access elements sequentially starting from
+the first node.
+
+2) Extra memory space for a pointer is
+required with each element of the list.
+
+3) Not cache friendly.
+
+O(1) Insertion – but is it
+always O(1)?
+Consider inserting in
+the middle – we’d need
+to find the middle first
+-> O(N)
+Still a minor issue, we
+can just:
+a) Store ‘checkpoints’
+b) Inserting & deleting
+from beginning is
+always O(1)
+
+LINKED LIST DISADVANTAGES
+
+1) Random access is not allowed. We have to
+access elements sequentially starting from
+the first node.
+
+2) Extra memory space for a pointer is
+required with each element of the list.
+
+3) Not cache friendly.
+
+O(1) Insertion – but is it
+always O(1)?
+Consider inserting in
+the middle – we’d need
+to find the middle first
+-> O(N)
+Still a minor issue, we
+can just:
+a) Store ‘checkpoints’
+b) Inserting & deleting
+from beginning is
+always O(1)
+
+SINGLY LINKED LIST
+
+● Each node has data
+and a pointer to the
+next node.
+
+DOUBLY LINKED LIST
+
+● Additional pointer to
+the previous node in
+a doubly-linked list.
+● Thus, we can go in
+either direction:
+forward or
+backward.
+
+The above is a singularly linked list that is unidirectional (or one directional as a
+better description) - as in it can only be traversed from the first node (the head) to
+the last node (the tail).
+
+The above is the doubly linked list. Unlike the first (single links) example, this variant allows us to traverse both
+forward and backwards due to the addition of 'previous node pointers'. This additional, however, comes at the
+cost of extra memory usage (to include it) as a note. Complexity wise, performance for insertion, search and
+
+CIRCULAR LINKED LIST
+
+● A circular linked list
+is a variation of a
+linked list in which
+the last element is
+linked to the first
+element. This forms
+a circular loop.
+
+● A circular linked list
+can be either singly
+linked or doubly
+linked.
+
+The Runner Technique
+A method to detect if a linked list is circular or not!
+
+Basically, use 2
+pointers
+One moves really fast
+The other moves slow
+If the two overlap, that
+means the LL must be
+circular (since the 1st
+fast one must’ve
+overtook then looped
+back around to the
+slow one)
+Like the turtle & hare
+story
+
+The Runner Technique
+Some LL can be circular; it can be very difficult to detect
+whether an LL is acyclic (not a cycle/circular) or cyclic,
+especially if you cannot modify the LL (e.g. by marking a
+node as 'visiting' when traversing).
+
+Enter this technique when you use and traverse with two
+pointers simultaneously. The first pointer is fast whilst the
+second is slow (+/or it also started from further behind). If
+the first (fast) pointer loops and catches up/passes the
+second pointer, then the LL is circular/cyclic. Else if it hit
+NULL, then you have a acyclic/non-circular LL. Hence, an
+intuitive and easy way to distinguish the structure of the LL.
+
