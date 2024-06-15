@@ -1,0 +1,77 @@
+The Document Object Model (DOM) provides JavaScript methods to read and write web page content.
+Document.write("text") = writes to web page not console
+The DOM allows you to read and write the text content: document.getElementById("message").textContent
+
+Events
+We don’t always want our code to run when the web page loads
+Sometimes we want code to run when something happens, such as the user clicking a button or changing a value
+ 
+Events allow you to run code when something happens, such as a click on a button.
+
+Creating HTML Elements
+The DOM allows you to create new HTML elements: document.createElement("h1")
+Creating an Element and Adding it to the HTML page; 
+Name of the HTML
+element you want to
+create (h1 for a top
+level heading)
+
+CSS
+textContent is better to use in terms of security and performance - since it
+uses plain text, it does not run any harmful scripts. It also doesn’t render
+anything, so it’s faster and more efficient!
+
+● textContent - sets or returns the plain text content for a
+specified element and all of its nested elements.
+● innerText - sets the visible text inside of an element and
+considers CSS styling and visibility.
+● innerHTML - sets the HTML content inside of an element, but
+includes both text and HTML markup.
+
+Working with Collections
+Timer and event example
+Sometimes we want to work with multiple HTML elements such as all of the elements with the <h1> tag
+We need to be able to select these HTML element on the page
+ 
+The DOM allows us to do that using getElementsByTagName()
+
+Working with Classes
+What if I want to apply the same settings to multiple elements that have different tags?
+We need to be able to classify these HTML element on the page
+ 
+The DOM allows us to do that using getElementsByClassName()
+
+Nested elements
+Sometimes we just want to work with the elements inside a particular HTML element, rather than all the matching elements in a whole document
+We might want to add an emoji to all the items in a particular list (rather than to every list item on a page)
+ 
+We can write code to get matching elements that are nested inside a specific element.
+HTML Elements can be nested
+ 
+DOM methods can be used on HTML elements to match elements nested inside instead of elements in the whole document.
+
+EVENT LISTENERS
+We want to trigger a function call when a specific event is targeted - like a button being clicked, or window being opened.
+The addEventListener() method is the recommended way to do this.
+ 
+Event Listeners allow you to trigger a function when something happens, such as a click on a button.
+
+Timers
+ 
+Sometimes we want something to happen after a time delay
+You might want to gradually reveal items on a page
+You might want to wait a few seconds before showing a hint
+We can do this by setting timeouts!
+The only thing to remember is that the time values are slightly different - so 1 second is 1000 milliseconds.
+ 
+The DOM allows you to run a function after a time delay (in milliseconds 1000ms is 1 second): setTimeout(go, 1000) 
+
+Traversing the DOM
+What if we want to add something a bit more colourful to our website like a background image or change the text style?
+We can use CSS (Cascading Style Sheets) to achieve this!
+We do this by selecting the HTML tags, ids or classes to manipulate their appearance.
+ 
+CSS allows us to change the style (property values) of elements we see on our HTML pages.
+
+Local Storage
+We can use local storage to store data in our web browser.

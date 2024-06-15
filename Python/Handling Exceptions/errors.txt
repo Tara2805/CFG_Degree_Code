@@ -1,0 +1,34 @@
+When a Python script encounters a situation that it cannot cope with, it
+raises an exception.
+
+When an exception is raised, it must either be handled immediately, otherwise it breaks the flow, terminates and quits.
+ERRORS & EXCEPTIONS
+
+A python program terminates as soon as it encounters an unhandled
+error. These errors can be broadly classified into two categories:
+1. Syntax errors
+2. Logical errors (Exceptions)
+
+Safeguards code
+try->except>else->finally
+
+USER DEFINED EXCEPTIONS
+Python allows you to create your OWN exceptions.
+This is achieved by deriving (inheriting) classes from the standard built-in exceptions.
+
+NOTE: we have not learnt about classes
+or inheritance yet, so at this stage we
+only need to know that we CAN make our
+OWN exceptions.
+
+DEBUGGING
+Bug - Bugs in software cause the program to produce unintended behaviour. It is a term commonly used to refer to an error with unknown location and reason,
+which can cause severe issues (i.e. crashing a program).
+
+Debugging - Debugging is the process of locating, analyzing, and correcting any bug (error) you might encounter. The ultimate goal of debugging is to remove such bugs.
+
+When running a program with a simple terminal, we can use
+Python library called pdb to run programs in debugging mode.
+
+Import pdb
+pdb.set_trace()

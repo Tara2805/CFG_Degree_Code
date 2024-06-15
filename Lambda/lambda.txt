@@ -1,0 +1,28 @@
+Lambda Functions
+DEFINITION AND USE
+
+● Lambda functions (also called Lambda Expressions) are a way to quickly create anonymous functions in Python.
+● An anonymous function is like a one time use function that doesn’t have a name.
+● The anonymous functions are useful when we need to use them once.
+● A lambda function typically contains one or more arguments, but it can have only one expression.
+● Python Lambdas are often used with with Map, Filter, and Reduce functions from the core library.
+
+Lambda Function Syntax
+lambda parameters: expression
+
+Function Syntax Equivalent
+def anonymous(parameters):
+return expression
+
+The Python core library has three methods called map, reduce, and filter.
+These methods are some of the best reasons to use lambda functions.
+
+● The first argument to the map() function is always a function itself. It is referred to as a transformation function. Use lambda for map().
+● The filter() function creates a list of elements for which a function returns true. It is often used with lambda expressions.
+● The reduce() function applies a rolling computation to sequential pairs of values in a list.
+It is a common practice to use lambdas here.
+
+map returns a map object of any number of values
+filter returns only the things that meet the criteria
+reduce returns a single value
+

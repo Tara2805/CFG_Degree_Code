@@ -1,0 +1,34 @@
+Regex - Regular Expressions
+Regex attempts to check whether a specified pattern exists within an input string and perform some operations when it exists.
+
+● ‘Regex’ is short for Regular Expressions
+● Regex is about capturing a group of text in an input string and processing it as required.
+● In order to capture a group of text, we need to use patterns (digits, alpha characters, punctuation etc. )
+● Regex provides such patterns for us.
+
+Python has a dedicated library called ‘re’, which provides lots of useful functionality to process regular expressions
+import re
+
+Common Functions
+
+● re.match(<regex>, s): finds and returns the first match of the regular expression <regex> starting from the beginning of the input string s
+
+● re.search(<regex>, s): finds and returns the first match of the regular expression <regex> in the input string s
+
+● re.finditer(<regex>, s): finds and returns an iterator consisting of all matches of the regular expression <regex> in the input string s
+
+● re.findall(<regex>, s): finds and returns a list of all matches of the regular expression <regex> in the input string s
+
+● re.sub(<regex>, new_text, s): finds and substitutes all matches of the regular expression <regex> in the input string s with new_text
+
+Grouping
+● Regex allows us to capture not just the entire regex pattern, but only capture a portion (or group) of it.
+● With Regex a simple way of doing this is by using the parenthesis (). (We can define a group we want to capture by surrounding it with ())
+● Parentheses create numbered Capturing Groups
+● We also have an option to name our groups, not just give them a number
+● A group may be excluded from the pattern by adding ?: in the beginning (it is called Non-capturing groups)
+
+Raw string
+● If we are trying to escape a backslash \ char within an input string, the best way is to use the raw string r
+● The raw string r allows us to skip the Python interpreter background processes when matching a pattern
+● If we do not use the raw string r and still are trying to escape a \ character, then we would need to use 4 ! (yes four backslashes)

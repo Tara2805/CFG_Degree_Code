@@ -1,0 +1,47 @@
+VALIDATION
+
+An assertion is a sanity-check that we can turn on or turn off when we finish testing the program.
+Exception Handling
+Assertions
+Breakpoints for debugging
+
+Assertions are carried out by the assert statement;
+
+def apply_discount(product, discount):
+  /*
+    Add a discount to the price.
+    :param product: dict obj, item spec including price 
+    :return: float new price
+
+    25/100 = 0.25 ...so 1 - 0.75
+  */
+    price = round(product['price'] * (1.0 - (discount / 100)), 2)
+   
+    assert 0 <= price <= product['price']
+    return price
+
+Place assertions at the start of a function to check for valid input, and after a function call to check for valid output.
+Do not Use Asserts for Data Validation
+Disabled operations turn null and assertion errors raised
+
+Avoid by using raise
+
+class AuthorisationError(Exception):
+    pass
+
+gym_members = []
+
+def cancel_membership(membership_id, user):
+/*
+    Cancel Gym membership for an existing member.
+*/
+    if not user.is_admin():
+        raise AuthorisationError('Must be admin to cancel')
+    if not gym_members.membership_exists(membership_id):
+        raise ValueError('Unknown id')
+
+    gym_members.find_membership(membership_id).delete()
+
+When you pass a tuple as the first argument in an assert statement, the assertion always evaluates as true. This kind of assertion will never fail.
+Do not use tuples with assertions
+
